@@ -1,0 +1,25 @@
+Add() Best Possible Case:
+	The best possible case for the add() method is O(1), where we add the value, and it is in the correct position right away, this is guaranteed on the first
+	addition of a string, but unlikely with more additions.
+	
+Add() Worst Possible Case:
+	The worst possible case for the add() method is O(N), where we add the value, and have to iterate through the entire array, swapping values. This grows linearly as
+	the array grows in length.
+	
+Add() Average Case:
+	The average case for the add() method is O(N), where the value's correct position is somewhere in the middle of the array, and we have to iterate at least a couple times.
+	this fits snuggly between the best and worst possible cases.
+	
+	
+Remove() Best Possible Case:
+	The best possible case for the remove() method is O(1), where the value we want to remove is the only value in the array at the time, this allows us to only use one iteration
+	of both for loops, meaning it can accomplish its task very quickly.
+	
+Remove() Worst Possible Case:
+	The worst possible case for the remove() method is O(N), where the value we want to remove is in the array, not alone. We would have to iterate through both for loops, but 
+	they are seperate and combined provide a O(2N) time complexity, since the inside loop breaks and returns true eventully, otherwise the second loop doesn't ever fire off.
+	
+Remove() Average Case:
+	The average case for remove() would be O(N), where the value we want to remove would be in the array somewhere, and we have to go through and iterate through the first and second 
+	for loops, this does not make it O(N^2) because we dont have to iterate through the second loop fully every time we want to iterate through the first one. The first loop fires and fires, 
+	until the value is found, then the second loop takes over, firing and firing, until all the values are shifted over, then the method returns and finishes, the loops are one at a time.
